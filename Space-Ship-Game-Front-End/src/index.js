@@ -133,8 +133,9 @@ form.addEventListener("submit", (event) => {
                 headers: {
                   "Content-Type": "application/json"
                 }
-              }).then(res => res.json())
-              .then(user => runGame(user))
+              }).then(console.log)
+              // .then(res => res.json())
+              // .then(user => runGame(user))
 
     }
     // fetch(UsersAPI) POST
