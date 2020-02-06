@@ -89,7 +89,7 @@ instBtn.addEventListener("click", () => {
 highScoresBtn.addEventListener("click", () => {
   // console.log("this is working");
     rightmenu.innerHTML = ""
-    fetch("http://localhost:3000/scores")
+    fetch("https://spaceship-game-api.herokuapp.com/scores")
     .then(res => res.json())
     .then(allScores => displayHighScores(allScores))
 
@@ -125,7 +125,7 @@ form.addEventListener("submit", (event) => {
       alert("Please Enter A Player Name to begin");
     }
     else{
-      fetch("http://localhost:3000/users", {
+      fetch("https://spaceship-game-api.herokuapp.com/users", {
                 method: "POST",
                 body: JSON.stringify({
                   name: playerName
@@ -353,7 +353,7 @@ ship.style.visibility = "hidden"
  gameOverButton.addEventListener("click", () => {
    leftmenu.style.visibility = "visible"
    gameOverButton.style.visibility = "hidden"
-   fetch("http://localhost:3000/scores", {
+   fetch("https://spaceship-game-api.herokuapp.com/scores", {
              method: "POST",
              body: JSON.stringify({
                user_id: userID,
