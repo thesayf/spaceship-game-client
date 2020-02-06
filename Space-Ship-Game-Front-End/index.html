@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Project Ship</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css?family=Geostar&display=swap')</style>
+</head>
+
+<body>
+    <div id="game">
+       
+        <div class="menuDiv" id="leftmenu">
+            <form id="form">
+
+                <input id="name" class="menu" type="text" name="name" placeholder="Enter Name">
+                <input id="start" class="menu" type="submit" value="Start">
+            </form>
+            <button id="instructionsbtn" class="menu">Instructions</button>
+            <button id="highscoresbtn" class="menu">High Scores</button>
+            <button id="musicbtn" class="menu">Music On/Off</button>
+        </div>
+
+ <p id="score" class="menu">Score:</p> 
+        <div id="rightmenu" class="menuDiv">
+           
+          <button id="game-over" type="button" name="game-over">Game Over</button>
+          
+        </div>
+
+        <div id="ship"></div>
+    </div>
+
+
+    <script src="./src/index.js"></script>
+</body>
+</html>

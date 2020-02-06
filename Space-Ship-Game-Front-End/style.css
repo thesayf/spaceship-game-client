@@ -1,0 +1,125 @@
+#game {
+    background-color: black;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 800px;
+    overflow: hidden;
+  }
+
+#ship {
+    /* width: 50px;
+    height: 30px; */
+    position: absolute;
+    visibility: hidden;
+
+    width: 0;
+    height: 0;
+    /* border: 25px solid red; */
+    /* border-right: 10px solid red; */
+
+    border-bottom: 25px solid red;
+    border-right: 25px solid transparent;
+    border-top: 25px solid red;
+    
+
+    position: relative;
+    left: -25px;
+}
+#ship:before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-left: 35px solid lawngreen;
+
+}
+
+/* MENU */
+.menuDiv {
+    height: 80%;
+    width: 40%;
+    color: lawngreen;
+    font-family: 'Geostar', cursive;
+    background-color: black;
+    color: lawngreen;
+    font-size: 2vh;
+    margin: 5%;
+    float: left;
+}
+
+#game-over {
+  color: lawngreen;
+  font-family: 'Geostar', cursive;
+  background-color: black;
+  color: lawngreen;
+  width: 33vh;
+  font-size: 2vh;
+  margin: 5%;
+  visibility: hidden;
+}
+
+.menu {
+    color: lawngreen;
+    font-family: 'Geostar', cursive;
+    background-color: black;
+    color: lawngreen;
+    width: 33vh;
+    font-size: 2vh;
+    margin: 5%;
+}
+.menu:focus {
+    outline-color: lawngreen;
+}
+
+input#name {
+    text-align: center;
+    background-color: black;
+    margin-bottom: 1%;
+}
+
+input#name:focus {
+    outline-color: lawngreen;
+}
+
+#highscoresbtn{
+    margin-bottom: 1%;
+}
+#instructionsbtn{
+    margin-bottom: 1%;
+}
+
+/* INSTRUCTIONS/HIGHSCORES */
+.rock {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 30%;
+    z-index: 2;
+}
+.bonus {
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 30%;
+    z-index: 2; 
+    box-shadow: 4px 4px 15px rgba(142, 190, 245, 0.3);
+}
+
+
+#score {
+    z-index: 1;
+    top: -30px;
+    right: 0;
+    position: absolute;
+}
+
+#game-over:focus {
+    outline-color: lawngreen;
+}
